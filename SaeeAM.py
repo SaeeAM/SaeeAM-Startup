@@ -162,7 +162,7 @@ if page == "Home":
 
 
     with cont3col1:
-        st.title("SaeeAM- Join Us)
+        st.title("SaeeAM- Join Us")
 
         st.subheader("IF U Want To Join SaeeAM Team, Do As Like SaeeAM Team Do, Grow Your Learning Skill Through Help India Through Your Knowledge")
         st.code("SaeeAM Team Welcome You! ...👈👈👈")
