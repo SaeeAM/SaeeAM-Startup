@@ -111,7 +111,7 @@ if page == "Home":
         st.write("Help Indian Startup/Business To Grow Up Through The SaeeAM Support Make Your Business Startup Profitable And Easy To Grow Up.")
         options = st.multiselect(
      'SaeeAM Services How May I Help You',
-     ['Service','Projects', 'Education', 'Business_idea', 'Startup','Consultant', 'Business Online','More & More'],
+     ['Service','Projects', 'Education', 'Business_idea', 'Startup','Consultant', 'Business Online','More & More'])
         st.code(options)
     with cont1col2:
         youths =  "https://assets4.lottiefiles.com/packages/lf20_ljotbiif.json"
