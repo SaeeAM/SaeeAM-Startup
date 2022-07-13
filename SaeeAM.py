@@ -72,12 +72,14 @@ with st.sidebar:
            if submitted:
                if len(email) > 0 or len(number) >0 or len(message) >0:
                    if email.endswith("@gmail.com"):
+                       conn= smtplib.SMTP('smtp.gmail.com', 587)
+                       conn.starttls()
+                       conn.login('startupsaeeam@gmail.com','qckkfvequfvzxrnl')
+                       sendmsg= ("SaeeAM ----" +name+" "+email+" "+number+" "+message)
+                       conn.sendmail('startupsaeeam@gmail.com', email, sendmsg)
+                       conn.quit()
+                
                        st.success("Thats Good Write Email syntax")
-                       with st.spinner(text='Email Sending'):
-                           time.sleep(3)
-                           sending = (name+" "+email+" "+number+" "+message)
-                           st.write(sending)
-                       
                        st.success('Done')
                        st.balloons()
                    else:
