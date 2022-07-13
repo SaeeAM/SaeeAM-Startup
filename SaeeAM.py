@@ -17,13 +17,13 @@ from gsheetsdb import connect
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button('SaeeAM Whatsapp', key="whatsapp", label="SaeeAM Whatsapp Group Join"):
+    if st.button('SaeeAM Whatsapp', label="SaeeAM Whatsapp Group Join"):
         webbrowser.open_new_tab('https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO') 
 with col2:
-    if st.button('SaeeAM Business', key="business", label="SaeeAM Online Business Listing On Google"):
+    if st.button('SaeeAM Business', label="SaeeAM Online Business Listing On Google"):
         webbrowser.open_new_tab('https://g.page/r/CR93AGLEpeP_EAE') 
 with col3:
-    if st.button('SaeeAM Telegram', key="telegram", label="SaeeAM Telegram Group Join"):
+    if st.button('SaeeAM Telegram', label="SaeeAM Telegram Group Join"):
         webbrowser.open_new_tab('https://t.me/+4Wwajk1RorA0OTE9')
    
 
