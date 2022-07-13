@@ -14,6 +14,13 @@ from PIL import Image
 import streamlit as st
 from gsheetsdb import connect
 
+st.set_page_config(
+    page_title="SaeeAM",
+    page_icon=":computer",  
+    layout="wide",
+    initial_sidebar_state="expanded",
+    
+)
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -28,17 +35,6 @@ with col3:
    
 
 conn= connect()
-
-st.set_page_config(
-    page_title="SaeeAM",
-    page_icon=":computer",  
-    layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items=None
-)
-
-
-
 
 @st.cache(ttl=60)
 def SaeeAM_query(query):
