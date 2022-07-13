@@ -14,6 +14,16 @@ from PIL import Image
 import streamlit as st
 from gsheetsdb import connect
 import webbrowser
+st.set_page_config(
+    page_title="SaeeAM",
+    page_icon=":computer",  
+    layout="wide",
+    initial_sidebar_state="expanded",
+    
+)
+
+if st.button('saeeam'):
+    webbrowser.open_new_tab('https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO')
 
 col1, col2, col3 = st.columns(3)
 
@@ -28,13 +38,7 @@ with col3:
         webbrowser.open_new_tab('https://t.me/+4Wwajk1RorA0OTE9')
    
 
-st.set_page_config(
-    page_title="SaeeAM",
-    page_icon=":computer",  
-    layout="wide",
-    initial_sidebar_state="expanded",
-    
-)
+
 conn= connect()
 
 @st.cache(ttl=60)
