@@ -108,11 +108,10 @@ if page == "Home":
         st.title("SaeeAM")
 
         st.subheader("""Indian Collage Studnet Startup Company""")
-        st.write("Help Indian Startup TO Grow Help By Creating Projects And Provide SErvices")
+        st.write("Help Indian Startup/Business To Grow Up Through The SaeeAM Support Make Your Business Startup Profitable And Easy To Grow Up.")
         options = st.multiselect(
-     'Select Services How May I Help You',
-     ['Jobs','SaeeAM Team', 'Apply Online', 'Sarkari Result', 'Teaching','Payment', 'Document Services','More & More'],['Jobs', 'Apply Online', 'Sarkari Result', 'Teaching','Payment', 'Document Services' ,'More & More'])
-
+     'SaeeAM Services How May I Help You',
+     ['Service','Projects', 'Education', 'Business_idea', 'Startup','Consultant', 'Funding','More & More']
         st.code(options)
     with cont1col2:
         youths =  "https://assets4.lottiefiles.com/packages/lf20_ljotbiif.json"
@@ -126,18 +125,36 @@ if page == "Home":
 
 
     with cont2col1:
-        st.title("Learn By Teach Someone")
+        st.title("SaeeAM Education")
 
-        st.subheader("""Indian Collage Studnet Teaching U As U Want""")
-        st.code("Python, Css, Html, Javascript, C++ ...👈👈👈")
+        st.subheader("""Indian Collage Professional Student Can Teach Indian Student/Youths To Make Good Carrer And Life. SaeeAM Team Make India As A Entreprenure Youth As a Teach 
+        Indian Student By SaeeAM Team.""")
+        st.code("Competition Exam, School Education, Collage Education, Programming, Business, Courses, Lots Of More. ...👈👈👈")
     
     with cont2col2:
-        collage = "https://assets10.lottiefiles.com/packages/lf20_khyisucd.json"
+        collage = "https://assets3.lottiefiles.com/packages/lf20_ikvz7qhc.json"
 
         lottie_json_coll = load_lottieurl(collage)
         st_lottie(lottie_json_coll)
         
 
+    cont4 = st.container()
+
+    cont4col1, cont4col2= cont4.columns([3,2])
+
+
+    with cont4col1:
+        st.title("SaeeAM Projects")
+
+        st.subheader("""Our SaeeAM Team Create Project That Can Solve Real World Problem. Through Unique Idea By Anyone Come With Us. Join In Project Learn Lots Of Thing
+        During The Project Making. Join Student Achieve Certificate That Show Your Contribution In Participating Project That Can Help To Get A Job By Menting In Career Resume.""")
+        st.code("Python, Css, Html, Javascript, C++ ...👈👈👈")
+    
+    with cont4col2:
+        collage = "https://assets6.lottiefiles.com/packages/lf20_kujqck0u.json"
+
+        lottie_json_coll = load_lottieurl(collage)
+        st_lottie(lottie_json_coll)
 
     cont3 = st.container()
 
@@ -145,10 +162,10 @@ if page == "Home":
 
 
     with cont3col1:
-        st.title("Join US")
+        st.title("SaeeAM- Join Us
 
-        st.subheader("JOin Us TO Creating Projects Related Computer Science field Earn With LEarn")
-        st.code("Website, App, Software, Networking, Servers ...👈👈👈")
+        st.subheader("IF U Want To Join SaeeAM Team, Do As Like SaeeAM Team Do, Grow Your Learning Skill Through Help India Through Your Knowledge")
+        st.code("SaeeAM Team Welcome You! ...👈👈👈")
         
     with cont3col2:
         youth = "https://assets3.lottiefiles.com/packages/lf20_Xdbivx.json"
