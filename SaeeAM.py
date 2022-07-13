@@ -14,6 +14,19 @@ from PIL import Image
 import streamlit as st
 from gsheetsdb import connect
 
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    if st.button('SaeeAM Whatsapp', key="whatsapp", label="SaeeAM Whatsapp Group Join"):
+        webbrowser.open_new_tab('https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO') 
+with col2:
+    if st.button('SaeeAM Business', key="business", label="SaeeAM Online Business Listing On Google"):
+        webbrowser.open_new_tab('https://g.page/r/CR93AGLEpeP_EAE') 
+with col3:
+    if st.button('SaeeAM Telegram', key="telegram", label="SaeeAM Telegram Group Join"):
+        webbrowser.open_new_tab('https://t.me/+4Wwajk1RorA0OTE9')
+   
+
 conn= connect()
 
 st.set_page_config(
@@ -22,9 +35,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-         'SaeeAM Whatsapp Group join us': 'https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO',
-         'SaeeAM Telegram Group join Us': 'https://t.me/+4Wwajk1RorA0OTE9',
-         'SaeeAM Business': "https://g.page/r/CR93AGLEpeP_EAE",
          'About': "#SaeeAM. Indian Collage Student Startup Company!"
      }
 )
