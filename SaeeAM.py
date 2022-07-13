@@ -30,11 +30,11 @@ for row in rows:
     st.write(f"{row.SaeeAM} has a :{row.first}:")
     st.code(row.first)
 
-wide="wide"
+
 st.set_page_config(
-    page_title=" SaeeAM",
+    page_title="SaeeAM",
     page_icon=":computer",  
-    layout=wide,
+    layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
          'Get Help': 'https://www.extremelycoolapp.com/help',
