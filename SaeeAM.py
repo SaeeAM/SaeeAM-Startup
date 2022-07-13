@@ -20,7 +20,7 @@ def SaeeAM_query(query):
     rows = rows.fetchall()
     return rows
 
-sheet_url = st.secrets["https://docs.google.com/spreadsheets/d/1-YeXhYv_waBgaa6lsI9OyUiUUUaV9OotLk_nOoeDmGY"]
+sheet_url ="https://docs.google.com/spreadsheets/d/1-YeXhYv_waBgaa6lsI9OyUiUUUaV9OotLk_nOoeDmGY"
 rows = SaeeAM_query(f'SELECT * FROM "{sheet_url}"')
 
 # Print results.
