@@ -34,9 +34,7 @@ st.set_page_config(
     page_icon=":computer",  
     layout="wide",
     initial_sidebar_state="expanded",
-    menu_items={
-         'About': "#SaeeAM. Indian Collage Student Startup Company!"
-     }
+    menu_items=None
 )
 
 
