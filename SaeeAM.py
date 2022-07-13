@@ -40,10 +40,10 @@ def SaeeAM_query(query):
 sheet_url ="https://docs.google.com/spreadsheets/d/1-YeXhYv_waBgaa6lsI9OyUiUUUaV9OotLk_nOoeDmGY"
 rows = SaeeAM_query(f'SELECT * FROM "{sheet_url}"')
 
-# Print results.
-for row in rows:
-    st.write(f"{row.SaeeAM} has a :{row.first}:")
-    st.code(row.first)
+# # Print results.
+# for row in rows:
+#     st.write(f"{row.SaeeAM} has a :{row.first}:")
+#     st.code(row.first)
 
 
 
@@ -61,6 +61,29 @@ with st.sidebar:
    pages = ["Home", "Coding", "Project", "ClassRoom"]
    page = st.selectbox("Menu", pages)
    
+   with st.expander("Today Work #SaeeAMpartner"):
+        sidecont1=st.container()
+        with sidecont1:
+
+            partner = SaeeAM_query(f'SELECT partners FROM "{sheet_url}"')
+
+            # Print results.
+            for partners in partner:
+
+                st.write(partners)
+
+            
+
+    with st.expander("Today Work Students"):
+        sidecont2=st.container()
+        with sidecont2:
+            students = SaeeAM_query(f'SELECT students FROM "{sheet_url}"')
+
+            # Print results.
+            for student in students:
+
+                st.write(f"{student}")
+
 
    with st.expander("How May I Help U"):
 
