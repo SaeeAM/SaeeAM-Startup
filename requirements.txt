@@ -2,3 +2,4 @@ streamlit==1.5.0
 streamlit-ace==0.1.1
 streamlit-lottie==0.0.3
 streamlit-drawable-canvas==0.8.0
+gsheetsdb==0.1.13.1
