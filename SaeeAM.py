@@ -22,9 +22,10 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-         'Get Help': 'https://www.extremelycoolapp.com/help',
-         'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "#SaeeAM. Startup Company!"
+         'SaeeAM Whatsapp Group join us': 'https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO',
+         'SaeeAM Telegram Group join Us': 'https://t.me/+4Wwajk1RorA0OTE9',
+         'SaeeAM Business': "https://g.page/r/CR93AGLEpeP_EAE",
+         'About': "#SaeeAM. Indian Collage Student Startup Company!"
      }
 )
 
@@ -82,7 +83,7 @@ with st.sidebar:
             # Print results.
              for student in students:
 
-                 st.write(f"{student}")
+                 st.(f"{student}")
 
 
    with st.expander("How May I Help U"):
