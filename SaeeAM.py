@@ -31,10 +31,10 @@ st.set_page_config(
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    link = '[SaeeAM Whatsapp :arrow_forward::smile:](https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO)'
+    link = '[SaeeAM Whatsapp :technologist::smile:](https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO)'
     st.markdown(link, unsafe_allow_html=True)
 with col2:
-    link = '[SaeeAM Business :arrow_forward::smile:](https://g.page/r/CR93AGLEpeP_EAE)'
+    link = '[SaeeAM Business :world_map: :smile:](https://g.page/r/CR93AGLEpeP_EAE)'
     st.markdown(link, unsafe_allow_html=True)
 with col3:
     link = '[SaeeAM Telegram :arrow_forward::smile:](https://t.me/+4Wwajk1RorA0OTE9)'
