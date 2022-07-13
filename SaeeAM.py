@@ -16,6 +16,21 @@ from gsheetsdb import connect
 
 conn= connect()
 
+st.set_page_config(
+    page_title="SaeeAM",
+    page_icon=":computer",  
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+         'Get Help': 'https://www.extremelycoolapp.com/help',
+         'Report a bug': "https://www.extremelycoolapp.com/bug",
+         'About': "#SaeeAM. Startup Company!"
+     }
+)
+
+
+
+
 @st.cache(ttl=60)
 def SaeeAM_query(query):
     rows = conn.execute(query, headers=1)
@@ -30,18 +45,6 @@ for row in rows:
     st.write(f"{row.SaeeAM} has a :{row.first}:")
     st.code(row.first)
 
-
-# st.set_page_config(
-#     page_title="SaeeAM",
-#     page_icon=":computer",  
-#     layout="wide",
-#     initial_sidebar_state="expanded",
-#     menu_items={
-#          'Get Help': 'https://www.extremelycoolapp.com/help',
-#          'Report a bug': "https://www.extremelycoolapp.com/bug",
-#          'About': "#SaeeAM. Startup Company!"
-#      }
-# )
 
 
 
