@@ -31,17 +31,17 @@ for row in rows:
     st.code(row.first)
 
 
-st.set_page_config(
-    page_title="SaeeAM",
-    page_icon=":computer",  
-    layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items={
-         'Get Help': 'https://www.extremelycoolapp.com/help',
-         'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "#SaeeAM. Startup Company!"
-     }
-)
+# st.set_page_config(
+#     page_title="SaeeAM",
+#     page_icon=":computer",  
+#     layout="wide",
+#     initial_sidebar_state="expanded",
+#     menu_items={
+#          'Get Help': 'https://www.extremelycoolapp.com/help',
+#          'Report a bug': "https://www.extremelycoolapp.com/bug",
+#          'About': "#SaeeAM. Startup Company!"
+#      }
+# )
 
 
 
