@@ -13,6 +13,7 @@ import pandas as pd
 from PIL import Image
 import streamlit as st
 from gsheetsdb import connect
+import webbrowser
 
 st.set_page_config(
     page_title="SaeeAM",
