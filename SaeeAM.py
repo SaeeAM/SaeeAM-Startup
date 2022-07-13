@@ -82,7 +82,7 @@ with st.sidebar:
             # Print results.
              for student in students:
 
-                 st.write(student)
+                 st.write(f"{student}")
 
 
    with st.expander("How May I Help U"):
