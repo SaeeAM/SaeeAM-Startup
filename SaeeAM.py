@@ -74,7 +74,7 @@ with st.sidebar:
 
             
 
-    with st.expander("Today Work #SaeeAMStudents"):
+with st.expander("Today Work #SaeeAMStudents"):
         sidecont2=st.container()
          with sidecont2:
               students = SaeeAM_query(f'SELECT students FROM "{sheet_url}"')
