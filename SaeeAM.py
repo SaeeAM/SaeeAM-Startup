@@ -13,7 +13,8 @@ import pandas as pd
 from PIL import Image
 import streamlit as st
 from gsheetsdb import connect
-import webbrowser
+# import webbrowser
+
 st.set_page_config(
     page_title="SaeeAM",
     page_icon=":computer",  
@@ -22,21 +23,22 @@ st.set_page_config(
     
 )
 
-if st.button('saeeam'):
-    webbrowser.open_new_tab('https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO')
+
+
+
+
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button('SaeeAM Whatsapp', help="SaeeAM Whatsapp Group Join"):
-        webbrowser.open_new_tab('https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO') 
+    link = '[SaeeAM Whatsapp :arrow_forward::smile:](https://chat.whatsapp.com/KvqQTGzvYp405hofDsHyuO)'
+    st.markdown(link, unsafe_allow_html=True)
 with col2:
-    if st.button('SaeeAM Business', help="SaeeAM Online Business Listing On Google"):
-        webbrowser.open_new_tab('https://g.page/r/CR93AGLEpeP_EAE') 
+    link = '[SaeeAM Business :arrow_forward::smile:](https://g.page/r/CR93AGLEpeP_EAE)'
+    st.markdown(link, unsafe_allow_html=True)
 with col3:
-    if st.button('SaeeAM Telegram', help="SaeeAM Telegram Group Join"):
-        webbrowser.open_new_tab('https://t.me/+4Wwajk1RorA0OTE9')
-   
+    link = '[SaeeAM Telegram :arrow_forward::smile:](https://t.me/+4Wwajk1RorA0OTE9)'
+    st.markdown(link, unsafe_allow_html=True)
 
 
 conn= connect()
