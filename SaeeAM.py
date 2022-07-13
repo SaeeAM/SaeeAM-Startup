@@ -126,9 +126,8 @@ if page == "Home":
 
     with cont2col1:
         st.title("SaeeAM Education")
-
-        st.subheader("""Indian Collage Professional Student Can Teach Indian Student/Youths To Make Good Carrer And Life. SaeeAM Team Make India As A Entreprenure Youth As a Teach 
-        Indian Student By SaeeAM Team.""")
+        st.subheader("""Learning Through Teaching Indian Students""")
+        st.write("""Indian Collage Professional Student Can Teach Indian Student/Youths To Make Good Carrer And Life. SaeeAM Team Make India As A Educated/Entreprenure Youth Through Teaching Indian Student By SaeeAM Team.""")
         st.code("Competition Exam, School Education, Collage Education, Programming, Business, Courses, Lots Of More. ...👈👈👈")
     
     with cont2col2:
@@ -145,10 +144,9 @@ if page == "Home":
 
     with cont4col1:
         st.title("SaeeAM Projects")
-
-        st.subheader("""Our SaeeAM Team Create Project That Can Solve Real World Problem. Through Unique Idea By Anyone Come With Us. Join In Project Learn Lots Of Thing
-        During The Project Making. Join Student Achieve Certificate That Show Your Contribution In Participating Project That Can Help To Get A Job By Menting In Career Resume.""")
-        st.code("Python, Css, Html, Javascript, C++ ...👈👈👈")
+        st.subheader("""Real World Problem Solving Projects""")
+        st.write("""Our SaeeAM Team Create Project That Can Solve Real World Problem. Through Unique Idea By Anyone Come With Us. Join In Project Learn Lots Of Thing During The Project Making. Join Student Achieve Certificate That Show Your Contribution In Participating Project That Can Help To Get A Job By Menting In Career Resume.""")
+        st.code("#KitchenGardening, #WorkFromHome, #OnlineSchool, #OnlineBusiness, #CodingPlatform ...👈👈👈")
     
     with cont4col2:
         collage = "https://assets6.lottiefiles.com/packages/lf20_kujqck0u.json"
@@ -163,8 +161,8 @@ if page == "Home":
 
     with cont3col1:
         st.title("SaeeAM- Join Us")
-
-        st.subheader("IF U Want To Join SaeeAM Team, Do As Like SaeeAM Team Do, Grow Your Learning Skill Through Help India Through Your Knowledge")
+        st.subheader("""Join Indian Collage Studnet Startup Company""")
+        st.write("IF U Want To Join SaeeAM Team, Do As Like SaeeAM Team Do, Grow Your Learning Skill Through Help India Through Your Knowledge")
         st.code("SaeeAM Team Welcome You! ...👈👈👈")
         
     with cont3col2:
