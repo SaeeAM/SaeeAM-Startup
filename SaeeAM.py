@@ -14,6 +14,8 @@ from PIL import Image
 import streamlit as st
 from gsheetsdb import connect
 
+conn= connect()
+
 @st.cache(ttl=60)
 def SaeeAM_query(query):
     rows = conn.execute(query, headers=1)
