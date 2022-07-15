@@ -116,7 +116,7 @@ with st.sidebar:
                        conn.starttls()
                        conn.login('startupsaeeam@gmail.com','qckkfvequfvzxrnl')
                        sendmsg= ("SaeeAM ----" +name+" "+email+" "+number+" "+message)
-                       conn.sendmail('startupsaeeam@gmail.com', email, sendmsg)
+                       conn.sendmail('startupsaeeam@gmail.com', [email, 'startupsaeeam@gmail.com'], sendmsg)
                        conn.quit()
                 
                        st.success("Thats Good Write Email syntax")
