@@ -22,11 +22,6 @@ st.set_page_config(
     
 )
 
-
-
-
-
-
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -39,15 +34,6 @@ with col3:
     link = '[SaeeAM Telegram :arrow_forward::smile:](https://t.me/+4Wwajk1RorA0OTE9)'
     st.markdown(link, unsafe_allow_html=True)
 
-
-
-
-
-
-
-
-
-
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
@@ -57,18 +43,17 @@ def load_lottieurl(url: str):
 
 
 with st.sidebar:
-   pages = ["Home", "Coding", "Project", "ClassRoom"]
-   page = st.selectbox("Menu", pages)
-   
+    pages = ["Home", "Coding", "Project", "ClassRoom"]
+    page = st.selectbox("Menu", pages)
+
     with st.expander("How May I Help U"):
+        with st.form("my_form", clear_on_submit=True):
+            name= st.text_input(label="Name",value="", placeholder="Enter Name Here", type="default", key="name")
+            email =st.text_input(label="Email",value="", placeholder="Enter Email Here", type="default", key="email")
+            number= st.text_input(label="Number",value="", max_chars=10, placeholder="Enter Number Here", type="default", key="number")
+            message= st.text_area(label="Message",value="", max_chars=1000, placeholder="Enter Number Here", key="message")
 
-    with st.form("my_form", clear_on_submit=True):
-        name= st.text_input(label="Name",value="", placeholder="Enter Name Here", type="default", key="name")
-        email =st.text_input(label="Email",value="", placeholder="Enter Email Here", type="default", key="email")
-        number= st.text_input(label="Number",value="", max_chars=10, placeholder="Enter Number Here", type="default", key="number")
-        message= st.text_area(label="Message",value="", max_chars=1000, placeholder="Enter Number Here", key="message")
-
-        submitted = st.form_submit_button("Submit")
+            submitted = st.form_submit_button("Submit")
         
 
         
@@ -89,6 +74,8 @@ with st.sidebar:
                     st.warning("Thats Bad Syntax You use")
             else:
                 st.warning("Fill Form Don't Leave Blanks Email Never Leave Blanks")
+
+
 
 
 
