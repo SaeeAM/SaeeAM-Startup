@@ -60,7 +60,7 @@ with st.sidebar:
    pages = ["Home", "Coding", "Project", "ClassRoom"]
    page = st.selectbox("Menu", pages)
    
-with st.expander("How May I Help U"):
+    with st.expander("How May I Help U"):
 
     with st.form("my_form", clear_on_submit=True):
         name= st.text_input(label="Name",value="", placeholder="Enter Name Here", type="default", key="name")
