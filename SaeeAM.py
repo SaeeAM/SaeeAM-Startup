@@ -92,7 +92,7 @@ if page == "Home":
     with cont1col1:
         st.title("SaeeAM")
 
-        st.subheader("""Indian Collage Studnet Startup Company""")
+        st.subheader("""Indian Collage Student Startup Company""")
         st.write("Help Indian Startup/Business To Grow Up Through The SaeeAM Support Make Your Business Startup Profitable And Easy To Grow Up.")
         options = st.multiselect(
      'SaeeAM Services How May I Help You',
