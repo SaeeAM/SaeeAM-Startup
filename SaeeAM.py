@@ -12,6 +12,14 @@ from streamlit_drawable_canvas import st_canvas
 import pandas as pd
 from PIL import Image
 import streamlit as st
+
+#panda profiling for data science
+
+import pandas as pd
+import pandas_profiling
+import streamlit as st
+
+from streamlit_pandas_profiling import st_profile_report
 # import webbrowser
 
 st.set_page_config(
@@ -43,7 +51,7 @@ def load_lottieurl(url: str):
 
 
 with st.sidebar:
-    pages = ["Home", "Coding", "Project", "ClassRoom"]
+    pages = ["Home", "Coding", "Project", "ClassRoom", "DataScience"]
     page = st.selectbox("Menu", pages)
 
     with st.expander("How May I Help U"):
@@ -270,7 +278,14 @@ elif page == "ClassRoom":
             objects = pd.json_normalize(canvas_result.json_data["objects"]) # need to convert obj to str because PyArrow
             for col in objects.select_dtypes(include=['object']).columns:
                 objects[col] = objects[col].astype("str")
-            st.dataframe(objects)
-       
+            st.dataframe(objects)       
 
 
+elif page =="DataScience":
+
+    st.title("SaeeAM Data Science Portal With Data Experiment")
+    data= st.text_input(label="Csv file link put here",value="https://storage.googleapis.com/tf-datasets/titanic/train.csv", placeholder="csv file link put here", type="default")
+    if data:
+        df = pd.read_csv(data)
+        pr = df.profile_report()
+        st_profile_report(pr)
